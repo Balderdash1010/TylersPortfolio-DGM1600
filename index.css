@@ -8,11 +8,22 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 40%;
+    }
+}
+
 a {
     text-decoration: none;
     color: #f0f0f0;
 }
-
 
 /* navigation */
 #navbar {
@@ -28,7 +39,6 @@ a {
 
 .nav-list a {
     display: block;
-    text-decoration: none;
     color: #f0f0f0;
     padding: 1.5rem;
     font-size: xx-large;
@@ -48,17 +58,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
 }
 
 /* project section */
 #projects {
     display: flex;
     justify-content: center;
+    margin: auto 3rem 0;
 }
 
 .projects-grid {
-    width: 1280;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -66,8 +78,46 @@ a {
     margin: 2rem;
 }
 
+figcaption {
+    color: black;
+    font-size: x-large;
+}
+
 /* contact section */
 #contact {
-    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
     background-color: #dea5a4;
+    font-size: 2rem;
+}
+
+#contact h1, h4 {
+    padding-bottom: 2rem;
+    color: black;
+}
+
+#contact div {
+    display: flex;
+    justify-content: center;
+}
+
+#contact div a {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 4px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+#contact div a:hover {
+    transform: translateY(-8px);
+}
+
+/* footer section */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: x-large;
 }

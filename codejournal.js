@@ -68,3 +68,12 @@ const anotherObject = {
 };
 
 // Functions
+
+function myFunction() {
+    retun "My greeting to you...";
+}
+
+function sumTwoThings(one, two) {
+    // watch out for data type issues here!
+    return one + two; // if numbers, will add them. If strings, will concatenate.
+}

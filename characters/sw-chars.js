@@ -2,6 +2,8 @@ import { people } from "../data/people.js";
 
 const main = document.querySelector("#main");
 
+console.log(people.length)
+
 people.forEach((element, index) => {
   const personFig = document.createElement("figure");
   const personImg = document.createElement("img");
@@ -9,10 +11,15 @@ people.forEach((element, index) => {
     index + 1
   }.jpg`;
   const personCaption = document.createElement("figcaption");
-  personCaption.textContent = "Person name goes here";
+  personCaption.textContent = element.name
 
   personFig.appendChild(personImg);
   personFig.appendChild(personCaption);
 
   main.appendChild(personFig);
+  getLastNumber(element.url)
 });
+
+function getLastNumber(url) {
+    console.log(url)
+}

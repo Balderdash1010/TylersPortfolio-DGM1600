@@ -2,6 +2,17 @@ import { people } from "../data/people.js";
 
 const main = document.querySelector("#main");
 
+const maleCharacters = people.filter(person => person.gender === 'male')
+console.log(maleCharacters.length)
+const femaleCharacters = people.filter(person => person.gender === 'female')
+console.log(femaleCharacters.length)
+
+const otherCharacters = people.filter(person => {
+  if(person.gender === 'n/a' || person.gender === 'hermaphrodite') {
+    return person
+  }
+})
+
 people.forEach((element) => {
   const personFig = document.createElement("figure");
   const personImg = document.createElement("img");

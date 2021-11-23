@@ -1,5 +1,5 @@
 import { starships } from '../data/starships.js'
-import { getLastNumber } from "../utils/index.js"
+import { getLastNumber, removeChildren } from "../utils/index.js"
 
 const nav = document.querySelector('.nav')
 const navList = document.querySelector('.navlist')
@@ -22,9 +22,9 @@ function populateNav() {
 populateNav()
 
 function populateShipView(shipData) {
-
+    removeChildren(shipView)
     let ShipImage = document.createElement('img')
     let shipNum = getLastNumber(shipData.url)
-    ShipImage.src = `https://starwars-visualguide.com/assets/imag/starships/${shipNum}.jpg`
+    ShipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     shipView.appendChild(ShipImage)
 }

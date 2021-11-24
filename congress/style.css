@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.senators {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+figure {
+    width: 150px;
+    height: 200px;
+}

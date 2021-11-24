@@ -125,3 +125,26 @@ const rebels = pilots.filter((pilot) => pilot.faction === "Rebels");
 const empire = pilots.filter((pilot) => {
     return pilot.faction === "Empire";
 })
+
+// Array Hler method 'map' example
+
+let filmURLs = [
+    "https://swapi.co/api/films/",
+    "https://swapi.co/api/films/5/",
+    "https://swapi.co/api/films/4/this one is longer... even longer",
+    "https://swapi.co/api/films/6/",
+    "https: ",
+    "https://swapi.co/api/films/1/",
+]
+
+const filmLenghts = filmURLs.map((filmURL) => filmURL.length);
+
+const filmPlusMore = filmURLs.map((filmURL) => {
+    let fimObj = {
+        index: filmURL,
+        date: Date.now()
+    };
+    return filmObj;
+})
+
+const pilotNames = pilots.map((pilot) => pilot.name);

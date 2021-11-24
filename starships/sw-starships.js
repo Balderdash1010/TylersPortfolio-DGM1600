@@ -8,7 +8,7 @@ const shipView = document.querySelector(".shipViewer");
 const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".modal-close");
 const modalBackground = document.querySelector(".modal-background");
-const shipMessage = document.querySelector('.shipMessage')
+const shipMessage = document.querySelector(".shipMessage");
 
 closeButton.addEventListener("click", () =>
   modal.classList.toggle("is-active")
@@ -35,13 +35,18 @@ populateNav();
 
 function populateShipView(shipData) {
   removeChildren(shipView);
-  let ShipImage = document.createElement("img");
+  let shipImage = document.createElement("img");
+  let shipName = document.createElement("div");
+  shipName.className = 'shipName'
+  shipName.textContent = shipData.name
   let shipNum = getLastNumber(shipData.url);
-  ShipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
-  ShipImage.addEventListener("error", () => {
-    ShipImage.hidden = true;
+  shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
+  shipImage.addEventListener("error", () => {
+    shipImage.hidden = true;
+    shipName.hidden = true
     modal.classList.toggle("is-active");
-    shipMessage.textContent = `${shipData.name} is currently unavailable`
+    shipMessage.textContent = `${shipData.name} is currently unavailable.`;
   });
-  shipView.appendChild(ShipImage);
+  shipView.appendChild(shipImage);
+  shipView.appendChild(shipName);
 }

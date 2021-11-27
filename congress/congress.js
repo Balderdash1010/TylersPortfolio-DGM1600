@@ -9,7 +9,11 @@ function simplifiedSenators(senatorArray) {
             id: senator.id,
             name: `${senator.first_name}${middleName}${senator.last_name}`,
             party: senator.party,
-            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`
+            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`,
+            gender: senator.gender,
+            seniority: "",
+            missedVotesPct: senator.missed_votes_pct,
+            LoyaltyPct: senator.votes_with_party_pct,
         }
     })
 }
@@ -30,3 +34,10 @@ function populateSenatorDiv(simpleSenators) {
         senatorDiv.appendChild(senFigure)
     })
 }
+
+const filterSenators = (prop, value) => {
+    return simplifiedSenators(senators).filter(senator => sentor[prop] === value)
+}
+
+const republicans = filterSenators('party', 'R')
+const femaleSenators = filterSenators('gender', 'F')

@@ -36,7 +36,7 @@ function populateSenatorDiv(simpleSenators) {
 }
 
 const filterSenators = (prop, value) => {
-    return simplifiedSenators(senators).filter(senator => sentor[prop] === value)
+    return simplifiedSenators(senators).filter(senator => senator[prop] === value)
 }
 
 const republicans = filterSenators('party', 'R')

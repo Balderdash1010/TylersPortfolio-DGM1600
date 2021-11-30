@@ -25,6 +25,11 @@ function populateSenatorDiv(simpleSenators) {
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
         let figCaption = document.createElement('figcaption')
+        if (senator["party"] === "D")
+            let figBorder = document.
+            elif (Senator["party"] === "R")
+            else
+
 
         figImg.src = senator.imgURL
 

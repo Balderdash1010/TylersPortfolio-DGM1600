@@ -19,3 +19,21 @@ figure {
 figcaption {
     text-align: center;
 }
+
+.demBorder {
+    border-width: 10px;
+    border-color: blue;
+    border-radius: 1.5em;
+}
+
+.repBorder{
+    border-width: 10px;
+    border-color: red;
+    border-radius: 1.5em;
+}
+
+.otherBorder{
+    border-width: 10px;
+    border-color: green;
+    border-radius: 1.5em;
+}

@@ -24,11 +24,16 @@ function populateSenatorDiv(simpleSenators) {
     simpleSenators.forEach(senator => {
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
-        let figCaption = document.createElement('figcaption')
-        if (senator["party"] === "D")
-            let figBorder = document.
-            elif (Senator["party"] === "R")
-            else
+        let figCaption = document.createElement('figCaption')
+
+        if (senator["party"] === "D") {
+            senFigure.className = "demBorder"
+        } else if (senator["party"] === "R") {
+            senFigure.className = "repBorder"
+        } else {
+            senFigure.className = "otherBorder"
+        } 
+        
 
 
         figImg.src = senator.imgURL
@@ -37,7 +42,7 @@ function populateSenatorDiv(simpleSenators) {
         senFigure.appendChild(figImg)
         senFigure.appendChild(figCaption)
         senatorDiv.appendChild(senFigure)
-    })
+     })
 }
 
 const filterSenators = (prop, value) => simplifiedSenators().filter(senator => senator[prop] === value)
@@ -48,5 +53,3 @@ const femaleSenators = filterSenators('gender', 'F')
 const mostSeniorSenator = simplifiedSenators().reduce((acc, senator) => {
     return acc.seniority > senator.seniority ? acc : senator
 })
-
-console.log(mostSeniorSenator)

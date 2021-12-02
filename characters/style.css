@@ -8,6 +8,7 @@ header {
     justify-content: space-around;
     background-color: gray;
     padding: 2em 0;
+    background-image: url(/Images/starBackground.jpeg);
 }
 
 button {
@@ -23,12 +24,20 @@ button:hover {
 main {
     display: flex;
     flex-wrap: wrap;
+    background-image: url(/Images/starBackground.jpeg);
 }
 
 figure {
-    margin: 5px;
+    margin: 15px;
+    border: 8px solid gold;
 }
 
 figure img{
     width: 200px;
+}
+
+figcaption {
+    background-color: gold;
+    text-align: center;
+    margin: 0;
 }

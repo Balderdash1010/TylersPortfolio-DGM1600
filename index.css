@@ -35,6 +35,8 @@ a {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .nav-list a {

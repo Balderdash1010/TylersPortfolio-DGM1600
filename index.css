@@ -36,7 +36,6 @@ a {
     justify-content: center;
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
 }
 
 .nav-list a {
@@ -61,6 +60,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* project section */
@@ -71,6 +71,7 @@ a {
     align-items: center;
     padding: 3rem 0;
     background-color: rgb(242 242 247);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #projects h3 {
@@ -92,7 +93,7 @@ figcaption {
     color: black;
     font-size: x-large;
     text-align: center;
-}
+    font-family: 'Montserrat', sans-serif;
 
 /* contact section */
 #contact {
@@ -132,4 +133,5 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: x-large;
+    font-family: 'Source Sans Pro', sans-serif;
 }

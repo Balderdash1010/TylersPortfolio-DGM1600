@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzBFQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">    
-    <link href="index.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
     <title>Tyler's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="navbar">
-        <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
-   <section id="welcome-section">
-       <h1>Hey I am Tyler</h1>
-   </section>
-   <section id="projects">
-       <h3>These are my projects</h3>
-       <div class="projects-grid">
-           <a href="/films/index.html" class="project-tile">
-               <figure>
-                   <img src="/Images/swFilms.jpeg"/>
-                   <figcaption>Star Wars Films</figcaption>
-               </figure>
-           </a>
-           <a href="/characters/index.html" class="project-tile">
-            <figure>
-                <img src="/Images/swCharacters.png"/>
-                <figcaption>Star Wars Characters</figcaption>
-            </figure>
+    <section id="welcome-section">
+      <div class="container">
+        <h1>Tyler Petersen</h1>
+        <h2>UI / UX Designer</h2>
+        <div class="image">
+          <img src="/Images/profileImage.jpg" alt="Profile Image" />
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h3>These are my projects</h3>
+      <div class="projects-grid">
+        <a href="/films/index.html" class="project-tile">
+          <figure>
+            <img class="profile" src="/Images/swFilms.jpeg" />
+            <figcaption>Star Wars Films</figcaption>
+          </figure>
+        </a>
+        <a href="/characters/index.html" class="project-tile">
+          <figure>
+            <img src="/Images/swCharacters.png" />
+            <figcaption>Star Wars Characters</figcaption>
+          </figure>
         </a>
         <a href="/starships/idex.html" class="project-tile">
-            <figure>
-                <img src="/Images/swStarships.jpg"/>
-                <figcaption>Star Wars Star Ships</figcaption>
-            </figure>
+          <figure>
+            <img src="/Images/swStarships.jpg" />
+            <figcaption>Star Wars Star Ships</figcaption>
+          </figure>
         </a>
         <a href="/congress/index.html" class="project-tile">
-            <figure>
-                <img src="/Images/congress.jpeg"/>
-                <figcaption>People of Congress</figcaption>
-            </figure>
+          <figure>
+            <img src="/Images/congress.jpeg" />
+            <figcaption>People of Congress</figcaption>
+          </figure>
         </a>
         <a href="#" class="project-tile">
-            <figure>
-                <img src="/Images/starwars.jpeg"/>
-                <figcaption>My figure caption</figcaption>
-            </figure>
+          <figure>
+            <img src="/Images/starwars.jpeg" />
+            <figcaption>My figure caption</figcaption>
+          </figure>
         </a>
         <a href="#" class="project-tile">
-            <figure>
-                <img src="/Images/starwars.jpeg"/>
-                <figcaption>My figure caption</figcaption>
-            </figure>
+          <figure>
+            <img src="/Images/starwars.jpeg" />
+            <figcaption>My figure caption</figcaption>
+          </figure>
         </a>
-       </div>
-   </section>
-
+      </div>
+    </section>
     <section id="contact">
-        <h1>My contact information</h1>
-        <h4>I am desperate for work</h4>
-        <div>
-            <a id="profile-link" href="" target="_blank">LinkedIn</a>
-            <a id="profile-link" href="https://github.com/Balderdash1010" target="_blank"> Github</a>
-            <a id="profile-link" href="" target="_blank">Twitter</a>
-            <a id="profile-link" href="" target="_blank">Send an email</a>
-            <a id="profile-link" href="" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i> Phone</a>
-         </div>
+      <h3>My contact information</h1>
+      <h4>I am desperate for work</h4>
+      <div>
+        <a id="profile-link" href="" target="_blank">LinkedIn</a>
+        <a id="profile-link" href="https://github.com/Balderdash1010" target="_blank">Github</a>
+        <a id="profile-link" href="" target="_blank">Twitter</a>
+        <a id="profile-link" href="" target="_blank">Send an email</a>
+        <a id="profile-link" href="" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i> Phone</a>
+      </div>
     </section>
     <footer>
-        <h5>This is my footer for my example portfolio Tyler Petersen &copy;2021</h5>
+      <h5>
+        This is my footer for my example portfolio Tyler Petersen &copy;2021
+      </h5>
     </footer>
-</body>
+  </body>
 </html>

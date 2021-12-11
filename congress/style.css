@@ -38,3 +38,11 @@ figcaption {
     border-color: green;
     border-radius: 1.5em;
 }
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 100px;
+    display: flex;
+    margin: 1rem
+}

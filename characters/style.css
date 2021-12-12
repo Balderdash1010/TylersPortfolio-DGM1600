@@ -6,8 +6,12 @@
 header {
     display: flex;
     justify-content: space-around;
-    background-color: gray;
-    padding: 2em 0;
+    color: gold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+   
+    padding: 1rem;
     background-image: url(/Images/starBackground.jpeg);
 }
 

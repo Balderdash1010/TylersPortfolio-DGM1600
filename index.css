@@ -55,6 +55,7 @@ a {
 #welcome-section {
     background: url('./Images/profileBackground.jpeg');
     height: 1040px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

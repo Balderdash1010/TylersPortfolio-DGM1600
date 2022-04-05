@@ -3,8 +3,12 @@
 }
 
 header {
-    background-color: blue;
-    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    color: gold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
 }
 
 figure {

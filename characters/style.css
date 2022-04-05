@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    background-image: url(/Images/starBackground.jpeg);
 }
 
 header {
@@ -16,6 +17,7 @@ header {
 }
 
 button {
+    background-image: none;
     font-size: x-large;
     background-color: gold;
     border-radius: 8px;

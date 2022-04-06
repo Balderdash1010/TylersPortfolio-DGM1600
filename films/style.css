@@ -20,7 +20,8 @@ img {
 }
 
 figcaption {
-    color: white;
+    color: gold;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: xx-large;
 }

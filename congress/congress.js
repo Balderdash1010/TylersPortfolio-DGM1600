@@ -1,7 +1,7 @@
 import { senators } from '../data/senators.js'
 import { representatives } from '../data/representatives.js'
 
-const members = [...senators, ...representatives] // modern combining arrays
+const members = [...senators, ...representatives]
 
 const senatorDiv = document.querySelector('.senators')
 const seniorityHeading = document.querySelector('.seniority')
@@ -33,16 +33,6 @@ function populateSenatorDiv(simpleSenators) {
         let figImg = document.createElement('img')
         let figCaption = document.createElement('figCaption')
 
-        /* if (senator["party"] === "D") {
-            senFigure.className = "demBorder"
-        } else if (senator["party"] === "R") {
-            senFigure.className = "repBorder"
-        } else {
-            senFigure.className = "otherBorder"
-        } */
-        
-
-
         figImg.src = senator.imgURL
 
         figCaption.textContent = senator.name
@@ -51,11 +41,6 @@ function populateSenatorDiv(simpleSenators) {
         senatorDiv.appendChild(senFigure)
      })
 }
-
-/* const simplifiedMembers = (prop, value) => simplifiedMembers().filter(senator => senator[prop] === value)
-
-const republicans = simplifiedMembers('party', 'R')
-const femaleSenators = simplifiedMembers('gender', 'F') */
 
 const mostSeniorMember = simplifiedMembers().reduce((acc, senator) => {
     return acc.seniority > senator.seniority ? acc : senator
@@ -70,6 +55,8 @@ const mostLoyal = simplifiedMembers().reduce((acc, senator) => {
     return acc
 }, [])
 
+
+
 const highestMissedVotes = simplifiedMembers().reduce((acc, senator) =>
 (acc.missedVotesPct || 0) > senator.missedVotesPct ? acc : senator, {})
 
@@ -81,3 +68,7 @@ highestMissedVoters.forEach(missedVotes => {
     listItem.textContent = missedVotes.name
     missedVotesOrderedList.appendChild(listItem)
 })
+
+const biggestMissedVotesPct = simplifiedSenators().reduce((acc, senator) => acc.missedVotesPct > senator.missedVotesPct ? acc : senator)
+
+const biggestVacationerList = simplifiedSenators().filter(senator => senator.missedVotesPct === biggestMissedVotesPct.missedVotesPct).map(senator => senator.name).join()

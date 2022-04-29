@@ -1,14 +1,48 @@
 * {
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+}
+
+body {
+    background-image: url(/Images/starBackground.jpeg);
+}
+
+/* navigation */
+#navbar {
+    width: 100%;
+    background-color: black;
+}
+.nav-list {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-list a {
+    display: block;
+    color: rgb(209 209 214);
+    padding: 2rem;
+    font-size: xx-large;
+    margin-right: 1rem;
+    text-decoration: none;
     
 }
 
+.nav-list a:hover {
+    color: rgb(242 242 247);
+}
+
+
 header {
+    
+    justify-content: center;
+    color: gold;
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
     font-size: 80px;
-    text-align: center;
+    margin: 3rem;
+    font-style: bold;
+    padding: 1rem;
 }
 
 footer {
@@ -21,6 +55,7 @@ footer {
 
 .nav {
     margin-left: 2em;
+    font-size: 30px;
 }
 
 section {
@@ -37,8 +72,30 @@ section {
 }
 
 .shipName {
-    font-size: xx-large;
+    font-size: 80px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 80px;
+    color: gold;
+    justify-content: center;
+}
+
+img {
+    max-width: auto;  
+    height: 60rem;
+    margin-top: -95rem;
+}
+
+.navlist {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding-top:5rem;
+    padding-bottom: 1rem;
+    font-size: x-large;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white
 }

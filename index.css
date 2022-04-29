@@ -104,7 +104,7 @@ a {
 }
 
 #projects h3 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
@@ -121,7 +121,7 @@ a {
 
 figcaption {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 200;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -133,8 +133,8 @@ figcaption {
     justify-content: center;
     align-items: center;
     height: 320px;
-    background-color: grey;
-    font-size: 2rem;
+    background-color: #565656;
+    font-size: 3rem;
     padding-top: 10px;
 }
 
@@ -142,7 +142,7 @@ figcaption {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 2rem;
-    color: black;
+    color: white;
 }
 
 #contact div {

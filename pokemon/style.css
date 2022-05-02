@@ -60,6 +60,7 @@ button {
 .pokeGrid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .scene {

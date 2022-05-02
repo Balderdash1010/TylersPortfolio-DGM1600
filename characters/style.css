@@ -59,12 +59,13 @@ button:hover {
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-image: url(/Images/starBackground.jpeg);
 }
 
 figure {
     margin: 15px;
-    border: 8px solid gold;
+    
 }
 
 figure img{
@@ -74,10 +75,10 @@ figure img{
 figcaption {
     background-color: gold;
     text-align: center;
-    margin: 0;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: x-large;
+    font-size: large;
 }
 
 footer {

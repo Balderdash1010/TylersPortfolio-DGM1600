@@ -55,8 +55,9 @@ h3 {
 }
 
 button {
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: 'roboto', sans-serif;
+    margin-left:3rem;
     margin: 1rem;
     width: 200px;  
     height: 60px;
@@ -69,6 +70,7 @@ button {
 .senators {
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
 }
 
 figure {
@@ -83,6 +85,7 @@ figcaption {
     text-align: center;
     font-size: 1rem;
     font-family: 'roboto', sans-serif;
+    width: 100%;
 }
 
 h1 {

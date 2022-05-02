@@ -1,101 +1,99 @@
 * {
-    margin: 0;
-    box-sizing: border-box;  
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url(/Images/starBackground.jpeg);
+  background-image: url(/Images/starBackground.jpeg);
 }
 
 /* navigation */
 #navbar {
-    width: 100%;
-    background-color: black;
+  width: 100%;
+  background-color: black;
 }
 .nav-list {
-    display: flex;
-    justify-content: right;
-    list-style-type: none;
-    font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-list a {
-    display: block;
-    color: rgb(209 209 214);
-    padding: 2rem;
-    font-size: xx-large;
-    margin-right: 1rem;
-    text-decoration: none;
-    
+  display: block;
+  color: rgb(209 209 214);
+  padding: 2rem;
+  font-size: xx-large;
+  margin-right: 1rem;
+  text-decoration: none;
 }
 
 .nav-list a:hover {
-    color: rgb(242 242 247);
+  color: rgb(242 242 247);
 }
 
-
 header {
-    
-    justify-content: center;
-    color: gold;
-    font-family: 'Roboto', sans-serif;
-    font-size: 80px;
-    margin: 3rem;
-    font-style: bold;
-    padding: 1rem;
+text-align: center;
+color: gold;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  margin: 3rem;
+  font-style: bold;
+  padding: 1rem;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 .mainContainer {
-    display: flex;
+  display: flex;
 }
 
 .nav {
-    margin-left: 2em;
-    font-size: 30px;
+  margin-left: 2em;
+  font-size: 30px;
 }
 
 section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .box {
-    font-size: xx-large;
-    text-align: center;
+  font-size: xx-large;
+  text-align: center;
 }
 
 .shipName {
-    font-size: 80px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: gold;
-    justify-content: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: gold;
+  justify-content: center;
 }
 
 img {
-    max-width: auto;  
-    height: 60rem;
-    margin-top: -95rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
 }
 
 .navlist {
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 footer {
-    text-align: center;
-    padding-top:5rem;
-    padding-bottom: 1rem;
-    font-size: x-large;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-size: x-large;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
 }

@@ -55,8 +55,6 @@ const mostLoyal = simplifiedMembers().reduce((acc, senator) => {
     return acc
 }, [])
 
-
-
 const highestMissedVotes = simplifiedMembers().reduce((acc, senator) =>
 (acc.missedVotesPct || 0) > senator.missedVotesPct ? acc : senator, {})
 

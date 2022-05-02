@@ -49,6 +49,7 @@ button {
     display: flex;
     justify-content: center;
     margin: 1rem;
+    margin-left: 8rem;
     width: 500px;  
     height: 70px;
     border-radius: 1rem;
@@ -127,4 +128,17 @@ li {
     font-size: small;
     margin-bottom: -1.5rem;
     margin-right:rem;
+}
+
+.typeSelect{
+  display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-left: 8rem;
+    width: 500px;  
+    height: 70px;
+    border-radius: 1rem;
+    font-size: xx-large;
+    padding-top: 1rem;
+    background-color: #ffcb05;
 }

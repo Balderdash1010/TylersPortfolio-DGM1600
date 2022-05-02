@@ -1,3 +1,5 @@
+import { removeChildren } from "../utils/index.js";
+
 const getAPIData = async (url) => {
   try {
     const result = await fetch(url);
@@ -148,6 +150,8 @@ function populateCardBack(pokemon) {
   pokeBack.appendChild(typeslist);
 
   return pokeBack;
+
+  
 }
 
 function getPokeTypeColor(pokeType) {
@@ -218,3 +222,11 @@ function filterPokemonByType(type) {
 }
 
 await loadPokemon(0, 151);
+
+const typeSelect = document.querySelector('.typeSelect')
+typeSelect.addEventListener('change', (event) => {
+  const usersTypeChoice = event.target.value.toLowerCase()
+  const pokemonByType = filterPokemonByType(usersTypeChoice)
+  removeChildren(pokeGrid)
+  pokemonByType.forEach((singlePokemon) => populatePokeCard(singlePokemon))
+})
